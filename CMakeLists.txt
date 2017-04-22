@@ -4,7 +4,7 @@ project(vehicle_detection_haarcascades)
 
 set(OpenCV_FOUND 1)
 
-set(OpenCV_DIR ~/downloads/opencv-2.4.13.2/)
+set(OpenCV_DIR ~/downloads/opencv-2.4.13.2)
 
 find_package(OpenCV REQUIRED)
 
