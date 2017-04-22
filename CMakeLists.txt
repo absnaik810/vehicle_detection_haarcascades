@@ -2,6 +2,10 @@ cmake_minimum_required(VERSION 2.8)
 
 project(vehicle_detection_haarcascades)
 
+set(OpenCV_FOUND 1)
+
+set(OpenCV_DIR ~/downloads/opencv-2.4.13.2/build)
+
 find_package(OpenCV REQUIRED)
 
 set(vehicle_detection_src vehicle_detection.cpp)
