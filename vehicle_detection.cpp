@@ -35,7 +35,7 @@ int main(int argc, char** argv)
 
   //assert(cascade && storage && capture);
 
-  cvNamedWindow("video", 1);
+  //cvNamedWindow("video", 1);
 
   IplImage* frame1 = cvQueryFrame(capture);
   frame = cvCreateImage(cvSize((int)((frame1->width*input_resize_percent)/100) , (int)((frame1->height*input_resize_percent)/100)), frame1->depth, frame1->nChannels);
@@ -52,13 +52,13 @@ int main(int argc, char** argv)
 
     detect(frame);
 
-    //key = cvWaitKey(33);
+    key = cvWaitKey(33);
 
-    //if(key == KEY_SPACE)
-      //key = cvWaitKey(0);
+    if(key == KEY_SPACE)
+      key = cvWaitKey(0);
 
-    //if(key == KEY_ESC)
-      //break;
+    if(key == KEY_ESC)
+      break;
 
   }while(1);
 
