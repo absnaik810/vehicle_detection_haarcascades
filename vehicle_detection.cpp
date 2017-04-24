@@ -52,13 +52,13 @@ int main(int argc, char** argv)
 
     detect(frame);
 
-    key = cvWaitKey(33);
+    //key = cvWaitKey(33);
 
-    if(key == KEY_SPACE)
-      key = cvWaitKey(0);
+    //if(key == KEY_SPACE)
+      //key = cvWaitKey(0);
 
-    if(key == KEY_ESC)
-      break;
+    //if(key == KEY_ESC)
+      //break;
 
   }while(1);
 
