@@ -96,4 +96,5 @@ void detect(IplImage *img)
   }
 
   cvShowImage("video", img);
+  cvSaveImage("video.jpg", img);
 }
