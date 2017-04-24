@@ -95,6 +95,6 @@ void detect(IplImage *img)
       CV_RGB(255, 0, 0), 2, 8, 0);
   }
 
-  cvShowImage("video", img);
+  //cvShowImage("video", img);
   cvSaveImage("video.jpg", img);
 }
