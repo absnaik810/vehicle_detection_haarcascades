@@ -33,7 +33,7 @@ int main(int argc, char** argv)
   storage = cvCreateMemStorage(0);
   capture = cvCaptureFromAVI(argv[2]);
 
-  assert(cascade && storage && capture);
+  //assert(cascade && storage && capture);
 
   //cvNamedWindow("video", 1);
 
